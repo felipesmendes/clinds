@@ -16,7 +16,10 @@ Template.map.rendered = function(){
 				Tracker.autorun(function () {        		
 	        		var clubs = Club.find({loc: {$near:[position.coords.latitude,position.coords.longitude],$maxDistance: 0.08}}).fetch();
 	        		_.each(clubs,function(club){
-	        			Map.addMarker({lat:club.loc[0], lng:club.loc[1]});
+	        			var latlng = new google.maps.LatLng(club.loc[0], club.loc[1]);
+	        			console.log(club);
+	        			var infowindow = '<h5>'+club.nome+'</h5><br/>Funcionamento<br/>'+club.dias.join(",")+'De '+club.abertura+' até '+club.fechamento+'<address><strong>'+club.nome+'</strong><br>'+club.endereco+'<br></address>';
+	        			Map.addMarkerCustom(latlng,infowindow,'http://maps.google.com/mapfiles/ms/icons/blue-dot.png',true);
 	        		});
         		});
         	});

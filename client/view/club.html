@@ -1,5 +1,5 @@
 <template name="club">
-	<form>
+	<form class="col-md-8">
 		<div class="form-group">
 			<label for="nome">Nome</label>
 			<input type="text" class="form-control" id="nome" placeholder="">
@@ -7,6 +7,46 @@
 		<div class="form-group">
 			<label for="endereco">Endereço</label>
 			<input type="text" class="form-control" id="endereco" placeholder="">
+		</div>
+		<div class="form-group">
+			<label>Funcionamento</label><br/>
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn btn-primary">
+			    <input type="checkbox" name="dias" autocomplete="off" value="Segunda-Feira"> Segunda-Feira
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="checkbox" name="dias" autocomplete="off" value="Terça-Feira"> Terça-Feira
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="checkbox" name="dias" autocomplete="off" value="Quarta-Feira"> Quarta-Feira
+			  </label>
+			   <label class="btn btn-primary">
+			    <input type="checkbox" name="dias" autocomplete="off" value="Quinta-Feira"> Quinta-Feira
+			  </label>
+			   <label class="btn btn-primary">
+			    <input type="checkbox" name="dias" autocomplete="off" value="Sexta-Feira"> Sexta-Feira
+			  </label>
+			   <label class="btn btn-primary">
+			    <input type="checkbox" name="dias" autocomplete="off" value="Sábado"> Sábado
+			  </label>
+			   <label class="btn btn-primary">
+			    <input type="checkbox" name="dias" autocomplete="off" value="Domingo"> Domingo
+			  </label>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="">Horário de Funcionamento</label><br/>
+			<div class="col-xs-2">
+				<input type="text" class="form-control" id="horario_de" placeholder="De">
+			</div>
+			<div class="col-xs-2">
+				<input type="text" class="form-control" id="horario_ate" placeholder="Até">
+			</div>
+		</div>
+		<br/>
+		<div class="form-group">
+			<label for="descricacao">Descrição</label>
+			<textarea class="form-control" id="descricao"></textarea>
 		</div>
 		<button type="submit" class="btn btn-default">Cadastrar</button>
 	</form>
