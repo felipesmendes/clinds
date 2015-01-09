@@ -1,4 +1,70 @@
 <template name="club">
+<div class="list">
+  <label class="item item-input">
+    <input type="text" placeholder="Nome">
+  </label>
+  <label class="item item-input">
+    <input id="endereco" type="text" placeholder="Endereço">
+  </label>
+  <label class="item item-input">
+    <textarea placeholder="Descrição"></textarea>
+  </label>
+</div>
+<div class="item item-divider">
+      Funcionamento
+</div>
+<div class="list">
+   <label class="item item-input">
+    <input id="horario_de" type="text" placeholder="De">
+  </label>
+  <label class="item item-input">
+    <input id="horario_ate" type="text" placeholder="Ate">
+  </label>
+</div>
+<ul class="list">
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input name="dias" value="Segunda-Feira" type="checkbox">
+     </label>
+     Segunda-Feira
+  </li>
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input name="dias" value="Terça-Feira" type="checkbox">
+     </label>
+     Terça-Feira
+  </li>
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input name="dias" value="Quarta-Feira" type="checkbox">
+     </label>
+     Quarta-Feira
+  </li>
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input name="dias" value="Quinta-Feira" type="checkbox">
+     </label>
+     Quinta-Feira
+  </li>
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input name="dias" value="Sexta-Feira" type="checkbox">
+     </label>
+     Sexta-Feira
+  </li>
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input name="dias" value="Sábado" type="checkbox">
+     </label>
+     Sábado
+  </li>
+  <li class="item item-checkbox">
+     <label class="checkbox">
+       <input name="dias" value="Domingo" type="checkbox">
+     </label>
+     Domingo
+  </li>
+</ul>
 	<form class="col-md-8">
 		<div class="form-group">
 			<label for="nome">Nome</label>

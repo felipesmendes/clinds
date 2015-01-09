@@ -1,7 +1,7 @@
 Template.map.rendered = function(){
 	if(Meteor.isCordova){
 			Map.initialize("map_canvas");
-		alert(Geolocation.currentLocation());
+	//	alert(Geolocation.currentLocation());
 	}
 	if(Meteor.isClient){
 	 	if (navigator.geolocation) {
@@ -29,8 +29,3 @@ Template.map.rendered = function(){
 	}
 };
 
-Template.map.helpers({
-	clubs: function(){
-
-	}
-})

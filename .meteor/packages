@@ -9,3 +9,7 @@ insecure
 mrt:bootstrap-3
 iron:router
 
+fourseven:scss
+meteoric:ionic-sass
+meteoric:ionicons-sass
+meteoric:autoform-ionic

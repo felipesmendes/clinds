@@ -1,0 +1,13 @@
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionic-sass/ionic';
+@import '.meteor/local/build/programs/server/assets/packages/meteoric_ionicons-sass/ionicons';
+
+body{
+	padding-top: 43px;
+}
+.contact-detail {
+  background: $stable;
+}
+#map_canvas{
+	width: 100%;
+    height: 100%;
+}
